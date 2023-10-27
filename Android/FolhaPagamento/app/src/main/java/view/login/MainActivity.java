@@ -38,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
 
         User user = new UserDAO().selectUser(usuario, senha);
 
-//        if (user != null) {
+        if (user != null) {
             Intent intent = new Intent(MainActivity.this, Menu.class);
             intent.putExtra("usuario", usuario);
             startActivity(intent);
             finish();
-//        } else {
-//            textViewSenhaIncorreta.setText("Usuário e/ou Senha incorreto!");
-//            limpar();
-//        }
+        } else {
+            textViewSenhaIncorreta.setText("Usuário e/ou Senha incorreto!");
+            limpar();
+        }
     }
 }
