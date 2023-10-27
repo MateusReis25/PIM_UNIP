@@ -1,0 +1,56 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>FolhaPagamentoDesktop</Name>
+    <Description>&lt;Nenhuma descrição disponível&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>FolhaPagamentoDesktop</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="FolhaPagamentoDesktop.csproj" File="FolhaPagamentoDesktop.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFornecedor.cs">CadastroFornecedor.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFornecedor.Designer.cs">CadastroFornecedor.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFornecedor.resx">CadastroFornecedor.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFuncionario.cs">CadastroFuncionario.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFuncionario.Designer.cs">CadastroFuncionario.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFuncionario.resx">CadastroFuncionario.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFuncionario2.cs">CadastroFuncionario2.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFuncionario2.Designer.cs">CadastroFuncionario2.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFuncionario2.resx">CadastroFuncionario2.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFuncionario3.cs">CadastroFuncionario3.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFuncionario3.Designer.cs">CadastroFuncionario3.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroFuncionario3.resx">CadastroFuncionario3.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroUsuario.cs">CadastroUsuario.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroUsuario.Designer.cs">CadastroUsuario.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CadastroUsuario.resx">CadastroUsuario.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConsultaFornecedor.cs">ConsultaFornecedor.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConsultaFornecedor.Designer.cs">ConsultaFornecedor.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConsultaFornecedor.resx">ConsultaFornecedor.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConsultaFuncionario.cs">ConsultaFuncionario.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConsultaFuncionario.Designer.cs">ConsultaFuncionario.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConsultaFuncionario.resx">ConsultaFuncionario.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Menu.cs">Menu.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Menu.Designer.cs">Menu.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Menu.resx">Menu.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Tela de Login.cs">Tela de Login.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Tela de Login.Designer.cs">Tela de Login.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Tela de Login.resx">Tela de Login.resx</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

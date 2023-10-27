@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cookie&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="../../img/favicon.png" />
+    <title>Cadastro de Fornecedor</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="btnVoltar">
+                <a href="../fornecedor.html">
+                    <button id="btnVoltar">
+                        <img src="../../img/voltar.png" alt="Voltar">
+                    </button>
+                </a>
+            </div>
+            <div>
+                <h1>Cadastar Fornecedor</h1>
+            </div>
+            <div></div>
+        </div>
+
+        <form id="fornecedor-form">
+
+            <div class="form">
+                <h2 class="subtitulo">Dados da Empresa</h2>
+                <div class="form-container">
+
+                    <div class="dados-pessoais">
+                        <label for="inputCnpj">CNPJ:</label>
+                        <input type="text" id="inputNome" name="cnpj">
+
+                        <label for="inputNomeMae">Nome fantasia:</label>
+                        <input type="text" id="inputNomeFantasia" name="nomeFantasia">
+
+                        <label for="inputNacionalidade">Razão social:</label>
+                        <input type="text" id="inputRazaoSocial" name="razaoSocial">
+
+                        <label for="inputNacionalidade">Inscrição estadual:</label>
+                        <input type="text" id="inputInscriçãoEstadual" name="inscriçãoEstadual">
+
+                        <label for="inputEmail">Email:</label>
+                        <input type="email" id="inputEmail" name="email">
+
+
+                    </div>
+
+                    <div class="dados-pessoais col">
+                        <label for="inputEndereco">Endereço:</label>
+                        <input type="text" id="inputEndereco" name="endereco">
+
+                        <label for="inputCidade">Cidade:</label>
+                        <input type="text" id="inputCidade" name="cidade">
+
+                        <label for="inputUf">UF:</label>
+                        <input type="text" id="inputUf" name="uf" maxlength="2">
+
+                        <label for="inputTelefone">Telefone:</label>
+                        <input type="tel" id="inputTelefone" name="telefone" maxlength="11">
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2 class="subtitulo">Dados Bancários</h2>
+                <div class="form-container">
+                    <div class="dados-bancarios col">
+                        <label for="inputBanco">Banco:</label><br>
+                        <input type="text" id="inputBanco" name="banco">
+
+                        <label for="inputAgencia">Agência:</label><br>
+                        <input type="number" id="inputAgencia" name="agencia">
+
+                        <label for="inputConta">Conta:</label>
+                        <input type="number" id="inputConta" name="conta">
+                    </div>
+                </div>
+            </div>
+            <div class="buttonCadastrar"><button id="btnCadastroFornecedor">Salvar</button></div>
+
+        </form>
+    </div><br><br>
+</body>
+<script src="cadastro.js"></script>
+
+</html>

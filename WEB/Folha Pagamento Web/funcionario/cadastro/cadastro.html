@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cookie&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="../../img/favicon.png" />
+    <title>Cadastro de Funcionário</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="btnVoltar">
+                <a href="../funcionario.html">
+                    <button id="btnVoltar">
+                        <img src=" ../../img/voltar.png" alt="Voltar">
+                    </button>
+                </a>
+            </div>
+            <div>
+                <h1>Cadastar Funcionário</h1>
+            </div>
+            <div></div>
+        </div>
+
+        <form id="funcionario-form">
+
+            <div class="form">
+                <h2 class="subtitulo">Dados Pessoais</h2>
+                <div class="form-container">
+
+                    <div class="dados-pessoais">
+                        <label for="inputNome">Nome:</label>
+                        <input type="text" id="inputNome" name="nome">
+
+                        <label for="inputNomeMae">Nome da mãe:</label>
+                        <input type="text" id="inputNomeMae" name="nomeMae">
+
+                        <label for="inputNacionalidade">Nacionalidade:</label>
+                        <input type="text" id="inputNacionalidade" name="nacionalidade">
+
+                        <label for="inputEmail">Email:</label>
+                        <input type="email" id="inputEmail" name="email">
+
+                        <label for="inputEndereco">Endereço:</label>
+                        <input type="text" id="inputEndereco" name="endereco">
+                    </div>
+
+                    <div class="dados-pessoais col">
+                        <label for="inputDataNascimento">Data de nascimento:</label>
+                        <input type="date" id="inputDataNascimento" name="dataNascimento">
+
+                        <label for="inputNaturalidade">Naturalidade:</label>
+                        <input type="text" id="inputNaturalidade" name="naturalidade">
+
+                        <label for="inputEscolaridade">Escolaridade:</label>
+                        <input type="text" id="inputEscolaridade" name="escolaridade">
+
+                        <label for="inputTelefone">Telefone:</label>
+                        <input type="tel" id="inputTelefone" name="telefone" maxlength="15">
+
+                        <label for="inputCidade">Cidade:</label>
+                        <input type="text" id="inputCidade" name="cidade">
+
+                        <label for="inputUf">UF:</label>
+                        <input type="text" id="inputUf" name="uf" maxlength="2">
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2 class="subtitulo">Documentos</h2>
+                <div class="form-container">
+
+                    <div class="dados-pessoais col">
+                        <label for="inputNumeroPis">Número do PIS:</label>
+                        <input type="number" id="inputNumeroPis" name="numeroPis">
+
+                        <label for="inputNumeroCTPS">Número da CTPS:</label>
+                        <input type="number" id="inputNumeroCTPS" name="numeroCTPS">
+
+                        <label for="inputCpf">CPF:</label>
+                        <input type="text" id="inputCpf" name="cpf">
+
+                        <label for="inputRg">RG:</label>
+                        <input type="text" id="inputRg" name="rg">
+                    </div>
+                    <div class="dados-pessoais col">
+                        <label for="inputNumeroReservista">Número da Reservista:</label>
+                        <input type="number" id="inputNumeroReservista" name="numeroReservista">
+
+                        <label for="inputNumeroTituloEleitor">Número do Título de Eleitor:</label>
+                        <input type="number" id="inputNumeroTituloEleitor" name="numeroTituloEleitor">
+
+                        <label for="inputZonaTituloEleitor">Zona do Título de Eleitor:</label>
+                        <input type="number" id="inputZonaTituloEleitor" name="zonaTituloEleitor">
+
+                        <label for="inputSecaoTituloEleitor">Seção do Título de Eleitor:</label>
+                        <input type="number" id="inputSecaoTituloEleitor" name="secaoTituloEleitor">
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2 class="subtitulo">Dados Bancários</h2>
+                <div class="form-container">
+
+                    <div class="dados-bancarios col">
+                        <label for="inputBanco">Banco:</label><br>
+                        <input type="text" id="inputBanco" name="banco">
+
+                        <label for="inputAgencia">Agência:</label><br>
+                        <input type="number" id="inputAgencia" name="agencia">
+
+                        <label for="inputConta">Conta:</label>
+                        <input type="number" id="inputConta" name="conta">
+                    </div>
+
+                </div>
+            </div>
+            <div class="form">
+                <h2 class="subtitulo">Dados Empresa</h2>
+                <div class="form-container">
+
+                    <div class="dados-pessoais">
+                        <label for="inputCargo">Cargo:</label>
+                        <input type="text" id="inputCargo" name="cargo">
+
+                        <label for="inputArea">Área:</label>
+                        <input type="text" id="inputArea" name="area">
+
+                        <label for="inputDataAdmissao">Data de Admissão:</label>
+                        <input type="date" id="inputDataAdmissao" name="dataAdmissao">
+
+                        <label for="inputHorario">Horário:</label>
+                        <input type="text" id="inputHorario" name="horario">
+
+                        <label for="inputEscala">Escala:</label>
+                        <input type="text" id="inputEscala" name="escala">
+                    </div>
+                    <div class="dados-pessoais">
+                        <label for="inputSalario">Salário:</label>
+                        <input type="text" id="inputSalario" name="salario">
+
+                        <label for="inputHoraMes">Horas por Mês:</label>
+                        <input type="number" id="inputHoraMes" name="horaMes">
+
+                        <label for="inputTipoContrato">Tipo de Contrato:</label>
+                        <input type="text" id="inputTipoContrato" name="tipoContrato">
+
+                        <label for="inputOpatanteSindical">Opatante Sindical:</label>
+                        <input type="text" id="inputOpatanteSindical" name="opatanteSindical">
+
+                        <div class="buttonCadastrar"><button id="btnCadastroFuncionario">Salvar</button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div><br><br>
+</body>
+<script src="cadastro.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+<script type="text/javascript">
+    $("#inputSalario").mask("R$ 0.000,00");
+    $("#inputTelefone").mask("(00) 00000-0000");
+    $("#inputCpf").mask("000.000.000-00");
+    $("#inputRg").mask("00.000.000-0");
+    $("#inputHorario").mask("00h ás 00h");
+</script>
+
+
+</html>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="view.fornecedor.Fornecedores">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context="view.funcionario.FuncionariosActivity">
+
+        <TextView
+            android:id="@+id/Texviewfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Fornecedores"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="23dp" />
+
+        <Button
+            android:id="@+id/btnVoltarFornecedor"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#00FFFFFF"
+            android:padding="8dp"
+            app:icon="@drawable/voltar"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/inputPesquisaPagamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_bold"
+                android:hint="Digite o Nome Fantasia ou CNPJ"
+                android:inputType="text"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnPesquisarPagamento"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                app:icon="@drawable/lupa"
+                app:iconGravity="textEnd"
+                app:iconSize="30dp"
+                app:iconTint="#000000" />
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnCadastrarFuncionario"
+                android:layout_width="59dp"
+                android:layout_height="46dp"
+                android:layout_gravity="end"
+                android:backgroundTint="#00FFFFFF"
+                app:icon="@drawable/mais"
+                app:iconGravity="textEnd"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="154dp"
+            android:layout_height="23dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="false"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewId"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/comfortaa_bold"
+                android:gravity="center"
+                android:text="ID"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textViewCnpj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/comfortaa_light"
+                android:gravity="start"
+                android:maxLength="8"
+                android:text="CNPJ"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="47dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textViewNomeFantasia"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_light"
+                android:gravity="end"
+                android:text="Nome Fantasia"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="505dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

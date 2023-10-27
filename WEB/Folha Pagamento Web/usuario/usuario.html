@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="usuario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cookie&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon.png"/>
+    <title>Usuário</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="title">Cadastro de Usuário</div>
+
+        <a href="../menu/menu.html">
+            <button class="btnVoltar">
+                <img src="../img/voltar.png" alt="Voltar">
+            </button>
+        </a>
+        
+        <div class="label">Usuário:</div>
+        <input type="text" id="inputNovoUsuario" class="input" />
+
+        <div class="label">Senha:</div>
+        <input type="password" id="inputNovaSenha" class="input" />
+
+        <div class="label">Confirmar Senha:</div>
+        <input type="password" id="inputNovaSenha2" class="input" />
+
+        <div class="error-text" id="textViewSenhaIncorreta"></div>
+
+        <div class="button">
+            
+            <button id="btnCadastrarUsuario">Cadastrar</button>
+        </div>
+    </div>
+</body>
+<script src="usuario.js"></script>
+</html>

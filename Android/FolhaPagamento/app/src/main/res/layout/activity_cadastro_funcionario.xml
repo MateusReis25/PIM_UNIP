@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_anchorGravity="end"
+    tools:context="view.funcionario.CadastroFuncionario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Cadastro de Funcionário"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <Button
+            android:id="@+id/btnVoltarCadastroduncionario"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#00FFFFFF"
+            android:padding="8dp"
+            app:icon="@drawable/voltar"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Nome -->
+                <TextView
+                    android:id="@+id/textViewNome2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Dados Pessoais"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textMatriculaAtualizacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textViewCnpj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Nome:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Data de Nascimento -->
+                <TextView
+                    android:id="@+id/textViewDataNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Data de nascimento:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputDataNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Nome da Mãe -->
+                <TextView
+                    android:id="@+id/textViewNomeMae"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Nome da mãe:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputNomeMae"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Sexo -->
+                <TextView
+                    android:id="@+id/textViewSexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Sexo:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Naturalidade -->
+                <TextView
+                    android:id="@+id/textViewNaturalidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Naturalidade:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputNaturalidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="15" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+
+                <TextView
+                    android:id="@+id/textViewNacionalidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Nacionalidade:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputNacionalidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="15" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Escolaridade -->
+                <TextView
+                    android:id="@+id/textViewEscolaridade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Escolaridade:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerEscolaridade"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- E-mail -->
+                <TextView
+                    android:id="@+id/textViewNome3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Contato"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="E-mail:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="20" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Telefone -->
+
+                <TextView
+                    android:id="@+id/textViewTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Telefone:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewNome4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Endereço"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Endereço -->
+                <TextView
+                    android:id="@+id/textViewEndereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Endereço:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputEndereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Cidade -->
+                <TextView
+                    android:id="@+id/textViewCidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Cidade:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputCidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="15" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- UF -->
+                <TextView
+                    android:id="@+id/textViewUF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="UF:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputUF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="2" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Número do PIS -->
+                <TextView
+                    android:id="@+id/textViewNome5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Documentos"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewNumeroPIS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Número do PIS:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputNumeroPIS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="11" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Número da CTPS -->
+                <TextView
+                    android:id="@+id/textViewNumeroCTPS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Número da CTPS:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputNumeroCTPS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="11" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- CPF -->
+                <TextView
+                    android:id="@+id/textViewCPF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="CPF:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputCPF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="11" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+
+                <TextView
+                    android:id="@+id/textViewRG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="RG:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputRG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="9" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewNumeroReservista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Número de Reservista:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputNumeroReservista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewNumeroTituloEleitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Número do Título de Eleitor:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputNumeroTituloEleitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewZonaTituloEleitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Zona do Título de Eleitor:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputZonaTituloEleitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="3" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewSecaoTituloEleitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Seção do Título de Eleitor:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputSecaoTituloEleitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="4" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewNome7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Dados Bancários"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewBanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Banco:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputBanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Agência -->
+                <TextView
+                    android:id="@+id/textViewAgencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Agência:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputAgencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Conta -->
+                <TextView
+                    android:id="@+id/textViewConta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Conta:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputConta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Cargo -->
+                <TextView
+                    android:id="@+id/textViewNome8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Dados Empresa"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewCargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Cargo:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputCargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Área -->
+                <TextView
+                    android:id="@+id/textViewArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Área:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Data de Admissão -->
+                <TextView
+                    android:id="@+id/textViewDataAdmissao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Data de Admissão:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputDataAdmissao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Horário -->
+                <TextView
+                    android:id="@+id/textViewHorario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Horário:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputHorario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Escala -->
+                <TextView
+                    android:id="@+id/textViewEscala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Escala:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputEscala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Salário -->
+                <TextView
+                    android:id="@+id/textViewSalario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Salário:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputSalario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Horas por Mês -->
+                <TextView
+                    android:id="@+id/textViewHoraMes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Horas por Mês:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputHoraMes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Tipo de Contrato -->
+                <TextView
+                    android:id="@+id/textViewTipoContrato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Tipo de Contrato:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerTipoContrato"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Opatante Sindical -->
+                <TextView
+                    android:id="@+id/textViewOpatanteSindical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Opatante Sindical:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerOpatanteSindical"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp" />
+
+                <Button
+                    android:id="@+id/btnCadastrarFuncionario"
+                    android:layout_width="235dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#379E3B"
+                    android:text="Salvar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

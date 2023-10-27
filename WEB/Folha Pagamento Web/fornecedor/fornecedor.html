@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="fornecedor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cookie&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon.png"/>
+    <title>Fornecedores</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="btnVoltar">
+                <a href="../menu/menu.html">
+                    <button id="btnVoltarFornecedor">
+                        <img src="../img/voltar.png" alt="Voltar">
+                    </button>
+                </a>
+            </div>
+            <div>
+                <h1>Fornecedores</h1>
+            </div>
+            <div></div>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="inputPesquisa" placeholder="Digite o nome do Fornecedor">
+            <button id="btnPesquisar">
+                <img src="../img/lupa.png" alt="Pesquisar">
+            </button>
+            <button id="btnCadastrarFornecedor">
+               <a href="./cadastro/cadastro.html"><img src="../img/mais.png" alt="Cadastrar"></a> 
+            </button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>CNPJ</th>
+                    <th>Nome Fantasia</th>
+                    <th>Funções</th>
+                    <th>Mais info.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="funcoes">
+                        <button class="btnAtualizar" data-index="0"><img src="../img/editar.png" alt="" width="100px"></button>
+                        <button class="btnExcluir" data-id="1"><img src="../img/excluir.png" alt=""></button>
+                    </td>
+                    <td><button style="font-size: 16px; text-decoration: underline;" class="btnMais" data-index="${i}">Mais</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="./fornecedor.js"></script>
+</html>

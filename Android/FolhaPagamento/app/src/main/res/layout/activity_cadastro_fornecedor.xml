@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_anchorGravity="end"
+    tools:context="view.fornecedor.CadastroFornecedor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Cadastro de Fornecedor"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <Button
+            android:id="@+id/btnVoltarCadastroFornecedor"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="#00FFFFFF"
+            android:padding="8dp"
+            app:icon="@drawable/voltar"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Dados Pessoais -->
+                <TextView
+                    android:id="@+id/textViewDadosPessoais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Dados Pessoais"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- CNPJ -->
+                <TextView
+                    android:id="@+id/textViewCnpj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="CNPJ:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputCnpj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="18" />
+
+                <!-- Nome Fantasia -->
+                <TextView
+                    android:id="@+id/textViewNomeFantasia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Nome Fantasia:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputNomeFantasia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="30" />
+
+                <!-- Razão Social -->
+                <TextView
+                    android:id="@+id/textViewRazaoSocial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Razão Social:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputRazaoSocial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="30" />
+
+                <!-- Inscrição Estadual -->
+                <TextView
+                    android:id="@+id/textViewInscricaoEstadual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Inscrição Estadual:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputInscricaoEstadual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                     />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewContato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Contato"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Email -->
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Email:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30" />
+
+                <!-- Telefone -->
+                <TextView
+                    android:id="@+id/textViewTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Telefone:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="15"
+                    android:ems="10"
+                    android:inputType="phone"
+                     />
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Endereço"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Endereço -->
+                <TextView
+                    android:id="@+id/textViewEndereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:maxLength="60"
+                    android:text="Endereço:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputEndereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="30" />
+
+                <!-- Cidade -->
+                <TextView
+                    android:id="@+id/textViewCidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Cidade:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputCidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="20" />
+
+                <!-- UF -->
+                <TextView
+                    android:id="@+id/textViewUF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="UF:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputUF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:maxLength="2" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:id="@+id/textViewBanc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Dados Bancarios"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <!-- Banco -->
+                <TextView
+                    android:id="@+id/textViewBanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Banco:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputBanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="15" />
+
+                <!-- Agência -->
+                <TextView
+                    android:id="@+id/textViewAgencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Agência:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputAgencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <!-- Conta -->
+                <TextView
+                    android:id="@+id/textViewConta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Conta:"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/inputConta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp" />
+
+                <TextView
+                    android:id="@+id/textViewValidacaoFornecedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textAlignment="center"
+                    android:textColor="#FF0202"
+                    android:textSize="14sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp" />
+
+                <Button
+                    android:id="@+id/btnCadastrarFornecedor"
+                    android:layout_width="235dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#379E3B"
+                    android:text="Salvar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context="view.funcionario.FuncionariosActivity">
+
+    <TextView
+        android:id="@+id/Texviewfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Funcionários"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="23dp" />
+
+    <Button
+        android:id="@+id/btnVoltarFornecedor"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#00FFFFFF"
+        android:padding="8dp"
+        app:icon="@drawable/voltar"
+        app:iconSize="30dp"
+        app:iconTint="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputPesquisaPagamento"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:hint="Digite o nome do Funcionário"
+            android:inputType="text"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnPesquisarPagamento"
+            android:layout_width="22dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            app:icon="@drawable/lupa"
+            app:iconGravity="textEnd"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnCadastrarFuncionario"
+            android:layout_width="59dp"
+            android:layout_height="46dp"
+            android:layout_gravity="end"
+            android:backgroundTint="#00FFFFFF"
+            app:icon="@drawable/mais"
+            app:iconGravity="textEnd"
+            app:iconSize="40dp"
+            app:iconTintMode="multiply" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="154dp"
+        android:layout_height="23dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="ID       Nome     Dt. Nascimento       CPF"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="505dp" />
+
+</LinearLayout>

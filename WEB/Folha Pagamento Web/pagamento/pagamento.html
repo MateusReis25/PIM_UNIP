@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="pagamento.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cookie&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" type="image/jpg" href="../img/favicon.png" />
+  <title>Pagamento</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="btnVoltar">
+        <a href="../menu/menu.html">
+          <button id="btnVoltar">
+            <img src="../img/voltar.png" alt="Voltar" />
+          </button>
+        </a>
+      </div>
+      <div>
+        <h1>Pagamento</h1>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="search-container">
+      <div class="inputRadio">
+        <div class="radioFuncionario">
+          <input type="radio" name="tipo" />Funcionário
+        </div>
+        <div class="radioFornecedor">
+          <input type="radio" name="tipo" />Fornecedor
+        </div>
+      </div>
+      <input type="text" id="inputPesquisa" placeholder="Digite o Id do Fornecedor ou matrícula do Funcionário" />
+      <button id="btnPesquisar">
+        <img src="../img/lupa.png" alt="Pesquisar" />
+      </button>
+    </div>
+
+    <div id="impressora" class="btnImprimir" style="display: none">
+      <button id="btnImprimir">
+        <img src="../img/impressora-com-papel.png" alt="impressora" />
+      </button>
+    </div>
+
+    <div id="container2" class="container2" style="display: none">
+      <div id="detalhesFuncionario">
+        
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="./pagamento.js"></script>
+</html>

@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 20px 20px 20px;
+}
+
+.header button{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.btnVoltar img{
+    width: 30px;
+    height: 30px;
+}
+
+.btnVoltar{
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.form form{
+    display: flex;
+    
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    box-shadow: rgba(89, 93, 97, 0.2) 0px 8px 24px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    width: 75%;
+}
+
+.form label {
+    display: flex;
+    font-size: 20px;
+}
+
+.form input {
+    display: flex;
+    font-size: 15px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.form-container {
+    text-align: center;
+    display: flex;
+}
+
+
+.titulo {
+    font-size: 30px;
+    color: #000000;
+}
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: #000000;
+}
+
+.scroll-container {
+    overflow: auto;
+    height: calc(100% - 80px);
+}
+
+.dados-pessoais {
+    text-align: center;
+    padding-top: 24px;
+    width: 100%;
+}
+
+.subtitulo{
+    font-size: 24px;
+    text-align: center;
+}
+
+.dados-bancarios{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.dados-bancarios input{
+    margin-left: 2px;
+    margin-right: 10px;
+}
+
+input {
+    width: 90%;
+    height: 25px;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 12px;
+    border-radius: 30px;
+    border-color: #00000029;
+    color: #000000b0;
+}
+
+input:focus{
+    outline: none;
+}
+
+.buttonCadastrar button {
+    font-family: 'Comfortaa', sans-serif;
+    width: 50%;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: #379E3B;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}

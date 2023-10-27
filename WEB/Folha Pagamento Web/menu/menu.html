@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon.png"/>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cookie&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="user-info">
+                <span class="greeting">Olá, </span>
+                <span class="username" id="usernameDisplay">Nome do Usuário</span>
+            </div>
+            <br>
+            <div><button class="logout-button" id="logoutButton">Sair</button></div>
+        </div>
+        <div class="welcome-message"><span >Seja Bem-Vindo(a)!</span></div>
+        <div class="content">
+            <img class="logo" src="../img/bebida_alcoolica.png" >
+            <h1 class="company-name">Company Drink’s</h1>
+            <div class="button-container">
+                <a href="../funcionario/funcionario.html"><button class="menu-button" id="funcionarios"><img src="../img/carteira_identidade_.png" alt=""> <br> Funcionários</button></a> 
+                <a href="../fornecedor/fornecedor.html"><button class="menu-button" id="fornecedores"><img src="../img/fornecedor.png" alt=""> <br>Fornecedores</button></a>  
+                <a href="../pagamento/pagamento.html"> <button class="menu-button" id="pagamento"><img src="../img/mao.png" alt=""> <br>Pagamento</button></a> 
+                <a href="../usuario/usuario.html"><button class="menu-button" id="cadastrar-usuario"><img src="../img/adicionar_usuario.png" alt=""> <br>Cadastrar Usuário</button></a> 
+            </div>
+        </div>
+    </div>
+</body>
+<script src="menu.js"></script>
+</html>

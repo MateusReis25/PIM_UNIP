@@ -1,0 +1,191 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.container {
+  padding: 25px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  width: 100%;
+  height: 100%;
+}
+
+.btnVoltar img {
+  width: 30px;
+  height: 30px;
+}
+
+.btnVoltar {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 34px;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.inputRadio input {
+  margin-right: 10px;
+}
+
+.radioFuncionario {
+  margin-left: 0px !important;
+}
+
+.radioFuncionario,
+.radioFornecedor {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.inputRadio input{
+  margin-bottom: 4px;
+}
+
+.inputRadio {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  height: 25px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-container input {
+  font-family: "Comfortaa", sans-serif;
+  width: 100%;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  height: 25px;
+  border-radius: 30px;
+}
+
+button img {
+  width: 70%;
+  height: 70%;
+}
+
+.column-headers {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+table th {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table td {
+  font-size: 14px;
+}
+
+.matriculaId {
+  font-size: 20px;
+}
+
+.btnImprimir {
+  display: flex;
+  justify-content: end;
+}
+
+.btnImprimir button {
+  width: 50px;
+  height: 50px;
+}
+
+.container2 {
+  box-shadow: rgba(89, 93, 97, 0.2) 0px 8px 20px 7px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#color {
+  color: #00000000;
+}
+
+.tdLimpo {
+  border-right: 1px solid #00000000;
+}
+
+.dadosBancarios {
+  border-right: 1px solid #00000000;
+  border-bottom: 1px solid #00000000;
+}
+
+.dadosBancariosValor {
+  border-bottom: 1px solid #00000000;
+}
+
+#dadosBancarios {
+  text-align: end;
+  border-bottom: 1px solid #00000000;
+  border-left: 1px solid #00000000;
+}
+
+#tdLimpo {
+  text-align: end;
+  border-left: 1px solid #00000000;
+  border-top: 1px solid #00000000;
+}
+
+.footer p {
+  margin: 5px;
+}
+
+.footer {
+  display: flex;
+}
